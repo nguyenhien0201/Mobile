@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="F:\PROJECT_learn\RefrencesDoc\Project\NetWork\NetWork.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MvcEngine">
+      <HintPath>F:\PROJECT_learn\RefrencesDoc\Tools\MvcEngine\MvcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>F:\PROJECT_learn\RefrencesDoc\Tools\DLL_update\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson">
+      <HintPath>F:\PROJECT_learn\RefrencesDoc\Tools\DLL_update\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="VstJson">
+      <HintPath>F:\PROJECT_learn\RefrencesDoc\Tools\DLL_update\VstJson.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="DevicePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

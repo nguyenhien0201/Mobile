@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.DevicePage">
+    <ContentPage.Content>
+        <Frame BorderColor="#f80" VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Label Text="Name of Device" />
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="#c00" CornerRadius="7.5" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="Number 1" HorizontalOptions="End" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="#0c0" CornerRadius="7.5" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="Number 2" HorizontalOptions="End" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        
+    </ContentPage.Content>
+</ContentPage>
